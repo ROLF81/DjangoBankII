@@ -95,3 +95,8 @@ def deletecustomer(request, id_):
             return HttpResponseBadRequest('error in the sent data')
     else:
         return HttpResponseNotAllowed(['DELETE'],'invalid method')
+
+#***************************************
+#  Account
+#***************************************
+

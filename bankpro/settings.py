@@ -74,13 +74,37 @@ WSGI_APPLICATION = 'bankpro.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+'''
+'''
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'bankii',
+        'USER': 'root',
+        'PASSWORD': 'Ale11Vicky28',
+        'HOST': '127.0.0.1',
+        'PORT': '3306'
+   }
+}
+'''
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dd0kllcma9cnrj',
+        'USER': 'dmwqdnlnvxtcyp',
+        'PASSWORD': '1d50667eecd93ebf322915ee0c7788c5c66e03760330efefb59f61b92099f7ba',
+        'HOST': 'ec2-34-227-135-211.compute-1.amazonaws.com',
+        'PORT': '5432'
+   }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
